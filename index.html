@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTuber's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004080; /* น้ำเงินเข้ม */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0059b3; /* น้ำเงิน */
+        }
+        nav a {
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0073e6; /* น้ำเงินอ่อน */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in {
+            opacity: 1 !important;
+        }
+        .video {
+            margin-bottom: 2rem;
+        }
+        .video iframe {
+            width: 100%;
+            height: 315px;
+        }
+        .content {
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ช่องของฉัน</h1>
+    </header>
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#videos">วิดีโอ</a>
+        <a href="#about">เกี่ยวกับ</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+    <div class="container" id="home">
+        <div class="content">
+            <h2>ยินดีต้อนรับสู่ช่องของฉัน!</h2>
+            <p>ติดตามวิดีโอล่าสุดและข่าวสารต่าง ๆ ได้ที่นี่</p>
+        </div>
+    </div>
+    <div class="container" id="videos">
+        <div class="content">
+            <h2>วิดีโอล่าสุด</h2>
+            <div class="video">
+                <iframe src="https://youtu.be/vMBiULkSm3k?si=vFgz3E3gPt1ZofjX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <div class="content">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>Hi! I'm PGaber. A Minecraft player who love making youtube videos & contents.
+Contents in this channel are mostly :
+- Minecraft Survival
+- Minecraft Buildings
+- Cities : Skylines Series
+
+Name - Gaber
+Gender - Male
+
+Computer Specs :
+CPU - Intel Core i5-12400F
+GPU - Asus Dual Geforce RTX 4060
+RAM - 32GB DDR4 3600Mhz
+MB - MSI MAG B660 Tomahawk
+M.2 - Apacer 512GB
+OS - Windows 11
+
+Gears :
+Mouse - Logitech G304 Lightspeed
+Mousepad - Razer Gigantus V2 (M)
+Keyboard - Fantech Maxfit108
+Headset - Razer Blackshark V2 X
+Monitor - MSI G2412 170hz
+
+Languages :
+Thai - Native
+English - Intermediate</p>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="content">
+            <h2>ติดต่อ</h2>
+            <p>สามารถติดต่อฉันได้ที่ <a href="mailto:example@example.com">example@example.com</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 ช่องของฉัน. สงวนลิขสิทธิ์.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const containers = document.querySelectorAll('.container');
+            containers.forEach(container => {
+                container.classList.add('fade-in');
+            });
+        });
+    </script>
+</body>
+</html>
