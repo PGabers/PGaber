@@ -3,65 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTuber's Website</title>
+    <title>My YouTube Channel</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
         header {
-            background-color: #004080; /* น้ำเงินเข้ม */
+            background-color: #ff0000;
             color: white;
-            padding: 1rem 0;
+            padding: 10px 0;
             text-align: center;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #0059b3; /* น้ำเงิน */
+            background-color: #333;
         }
         nav a {
             color: white;
-            padding: 1rem 2rem;
+            padding: 14px 20px;
             text-decoration: none;
-            text-transform: uppercase;
-            transition: background-color 0.3s;
+            text-align: center;
         }
         nav a:hover {
-            background-color: #0073e6; /* น้ำเงินอ่อน */
+            background-color: #575757;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .fade-in {
-            opacity: 1 !important;
+        .content {
+            padding: 20px;
         }
         .video {
-            margin-bottom: 2rem;
+            margin: 20px 0;
         }
         .video iframe {
             width: 100%;
-            height: 315px;
-        }
-        .content {
-            background-color: white;
-            padding: 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            max-width: 600px;
+            height: 340px;
         }
         footer {
-            background-color: #004080;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 1rem 0;
-            position: absolute;
+            padding: 10px 0;
+            position: fixed;
             width: 100%;
             bottom: 0;
         }
@@ -69,76 +54,36 @@
 </head>
 <body>
     <header>
-        <h1>ช่องของฉัน</h1>
+        <h1>Welcome to My YouTube Channel</h1>
     </header>
     <nav>
-        <a href="#home">หน้าแรก</a>
-        <a href="#videos">วิดีโอ</a>
-        <a href="#about">เกี่ยวกับ</a>
-        <a href="#contact">ติดต่อ</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <div class="container" id="home">
-        <div class="content">
-            <h2>ยินดีต้อนรับสู่ช่องของฉัน!</h2>
-            <p>ติดตามวิดีโอล่าสุดและข่าวสารต่าง ๆ ได้ที่นี่</p>
-        </div>
-    </div>
-    <div class="container" id="videos">
-        <div class="content">
-            <h2>วิดีโอล่าสุด</h2>
+    <div class="content">
+        <section id="home">
+            <h2>Latest Videos</h2>
             <div class="video">
-                <iframe src="https://youtube.com/c/PGaber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Video Title 1</h3>
+                <iframe src="https://www.youtube.com/embed/vMBiULkSm3k?si=UrqiNCeohxJm8qEb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
-    </div>
-    <div class="container" id="about">
-        <div class="content">
-            <h2>เกี่ยวกับฉัน</h2>
-            <p>Hi! I'm PGaber. A Minecraft player who love making youtube videos & contents.
-Contents in this channel are mostly :
-- Minecraft Survival
-- Minecraft Buildings
-- Cities : Skylines Series
-
-Name - Gaber
-Gender - Male
-
-Computer Specs :
-CPU - Intel Core i5-12400F
-GPU - Asus Dual Geforce RTX 4060
-RAM - 32GB DDR4 3600Mhz
-MB - MSI MAG B660 Tomahawk
-M.2 - Apacer 512GB
-OS - Windows 11
-
-Gears :
-Mouse - Logitech G304 Lightspeed
-Mousepad - Razer Gigantus V2 (M)
-Keyboard - Fantech Maxfit108
-Headset - Razer Blackshark V2 X
-Monitor - MSI G2412 170hz
-
-Languages :
-Thai - Native
-English - Intermediate</p>
-        </div>
-    </div>
-    <div class="container" id="contact">
-        <div class="content">
-            <h2>ติดต่อ</h2>
-            <p>สามารถติดต่อฉันได้ที่ <a href="mailto:example@example.com">example@example.com</a></p>
-        </div>
+            <div class="video">
+                <h3>Video Title 2</h3>
+                <iframe src="https://www.youtube.com/embed//hKpV3DD6vE4?si=Ag_yQj4Fs1Q88XEL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>This is a brief introduction about the YouTuber. You can add more information about your channel, what type of content you create, and any other relevant details.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can contact me via email at: <a href="mailto:example@example.com">example@example.com</a></p>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2024 ช่องของฉัน. สงวนลิขสิทธิ์.</p>
+        <p>&copy; 2024 My YouTube Channel</p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const containers = document.querySelectorAll('.container');
-            containers.forEach(container => {
-                container.classList.add('fade-in');
-            });
-        });
-    </script>
 </body>
 </html>
